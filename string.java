@@ -24,6 +24,13 @@ public class string{
     }
     public static void main(String[] args){
         //System.out.print(typeof(args[0]));
-        reverse(args[0]);
+        if(args.length == 0){
+            System.out.print("please enter a argument");
+           
+        }
+        else{
+            reverse(args[0]);
+        }
+        
     }
 }
