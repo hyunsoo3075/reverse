@@ -3,20 +3,18 @@ import java.util.*;
 public class string{
     public static void reverse(String str1){
         char[] arr = str1.toCharArray();
-        //List<Character> arr = new ArrayList<Character>(Arrays.asList(str1.split("")));
-        //System.out.println(arr);
         
         int len = arr.length;
         
         
-        int tracker2 = len - 1;
+        int tracker = len - 1;
         for(int i = 0; i <= len/2; i++){
             char holder = arr[i];
-            arr[i] = arr[tracker2];
+            arr[i] = arr[tracker];
             
-            arr[tracker2] = holder;
+            arr[tracker] = holder;
         
-            tracker2--;
+            tracker--;
 
         }
         String tostr = String.valueOf(arr);
