@@ -1,6 +1,6 @@
 import java.util.*; 
 
-public class string{
+public class ReverseString{
     public static void reverse(String str1){
         char[] arr = str1.toCharArray();
         
